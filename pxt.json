@@ -1,0 +1,35 @@
+{
+    "name": "ir",
+    "version": "1.0.3",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "ReceiverIR.cpp",
+        "_locales/zh-cn/ir-strings.json",
+        "_locales/zh-tw/ir-strings.json",
+        "_locales/pt/ir-strings.json",
+        "_locales/fr/ir-strings.json",
+        "_locales/es/ir-strings.json",
+        "_locales/nb/ir-strings.json",
+        "_locales/ru/ir-strings.json",
+        "_locales/ja/ir-strings.json",
+        "ir.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
+}
