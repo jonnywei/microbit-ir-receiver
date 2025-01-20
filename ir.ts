@@ -14,7 +14,7 @@ enum PIN {
 /**
  * Custom blocks
  */
-//% weight=100 color=#0fbc11 icon="\uf1eb" block="IR"
+//% weight=100 color=#0fbc11 icon="\uf11b" block="IR"
 namespace IR {
     let state: number;
     let data1: number;
