@@ -6,8 +6,8 @@ enum PIN {
     //P9 = 10,
     P12 = 20,
     P13 = 23,
-    P14 = 22,
-    P15 = 21,
+    P14 = 14,
+    P15 = 15,
     p16=  24,
 };
 
@@ -48,7 +48,7 @@ namespace IR {
     export function IR_callbackUser(T: PIN, cb: (message: number) => void) {
         let _T;
         _T = DigitalPin.P14;
-        pinNumber = 14;
+        pinNumber = T;
         switch (T) {
             case PIN.P0: _T = DigitalPin.P0; break;
             case PIN.P1: _T = DigitalPin.P1; break;
@@ -84,7 +84,7 @@ namespace IR {
 
     function valuotokeyConversion(): number {
         //serial.writeValue("x", irCode() )
-        let data = irCode();
+        let data = irCode(pinNumber);
         if (data == 0) {
         } else {
             irData = data & 0xff;

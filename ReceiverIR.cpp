@@ -50,9 +50,9 @@ void remote_decode(int pin_num){
     uint32_t lasttime = system_timer_current_time_us();
     uint32_t nowtime;
     MicroBitPin pin = uBit.io.P14;
-    if(pin_num == 15{
+    if(pin_num == 15){
         pin = uBit.io.P15;
-    })
+    }
     while(pin.getDigitalValue()){//High level wait
         nowtime = system_timer_current_time_us();
         if((nowtime - lasttime) > 100000){//More than 100 ms indicates that no key is pressed at this time
